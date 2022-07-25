@@ -14,11 +14,8 @@ export default function ReviewGallery () {
         });
     }, []);
 
-
-
     return (
         <div className="review-gallery">
-            <p>Review Gallery</p>
             <FilterBar />
             {reviews.map((review) => {
                 return <SampleReviewCard key={review.review_id} review={review}/>

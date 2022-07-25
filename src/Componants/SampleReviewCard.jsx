@@ -1,7 +1,6 @@
 
 export default function SampleReviewCard ({review}) {
 
-
     return (
         <div className="sample-review-card">
             <div className="sample-img-container">
