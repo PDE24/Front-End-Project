@@ -9,7 +9,7 @@ export default function ReviewGallery () {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        axios.get('https://pde-games.herokuapp.com/api/reviews').then(res => {
+        axios.get(`https://pde-games.herokuapp.com/api/reviews`).then(res => {
             setReviews(res.data.reviews);
         });
     }, []);
