@@ -7,8 +7,10 @@ import ReviewGallery from "./Componants/ReviewGallery";
 function App() {
   return (
     <div className="App">
+  
       <Banner />
       <CurrentUserCard />
+      
       <ReviewGallery />
     </div>
   );
