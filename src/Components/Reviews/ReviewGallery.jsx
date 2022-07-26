@@ -22,11 +22,13 @@ export default function ReviewGallery() {
   }, [category]);
 
   return (
+
     <div className="review-gallery">
       <FilterBar />
       {reviews.map((review) => {
         return <SampleReviewCard key={review.review_id} review={review} />;
       })}
-    </div>
+      </div>
+
   );
 }

@@ -17,7 +17,7 @@ function App() {
       <Banner />
       <CurrentUserCard />
       <Routes>
-        <Route path="/reviews" element={<ReviewGallery />}></Route>
+        <Route path="/" element={<ReviewGallery />}></Route>
         <Route path="/reviews/:category" element={<ReviewGallery />}></Route>
       </Routes>
       

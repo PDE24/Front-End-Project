@@ -24,7 +24,7 @@
 
 /* Review Gallery */
 .review-gallery {
-  grid-column: 1 / span 2;
+  grid-column: span 2;
   min-height: 800px;
   display: flex;
   flex-wrap: wrap;
@@ -33,20 +33,19 @@
 
 /* Filter Bar */
 .filter-bar {
-  margin: 10px;
-  min-height: 40px;
+  
   width: 100%;
+  height: 70px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .menu {
   width: 200px;
   background-color: rgb(250, 250, 250);
-  z-index: 1000;
+  z-index: 9;
   position: absolute;
-  text-align: left;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .menu-options {
@@ -71,30 +70,6 @@
 .option:active {
   background-color: #1BA665;
 }
-
-
-
-
-select {
-  width: fit-content;
-  margin: 10px;
-  height: 30px;
-  border: transparent;
-  font-size: medium;
-  background-color: rgb(250, 250, 250);
-  font-weight: bold;
-}
-
-select:hover {
-  box-shadow: 0px 2px #F2A81D;
-  
-}
-
-select:after{
-  background-color: #1BA665;
-}
-
-
 
 
 /* Sample Review Card */
