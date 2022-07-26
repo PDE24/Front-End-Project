@@ -9,7 +9,7 @@ export default function SampleReviewCard ({review}) {
             </div>
             <h3 className="sample-title">{review.title}</h3>
             <p className="sample-body">{review.review_body}</p>
-            <button>Read more...</button>
+            <button className="button">Read more...</button>
         </div>
 
     )
