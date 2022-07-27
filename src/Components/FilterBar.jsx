@@ -16,7 +16,7 @@ export default function FilterBar() {
   return (
     <div className="filter-bar">
       <DropList>
-        Category ▽
+        Category ▾
         {categories.map((category) => {
           return (
             <Link to={`/reviews/${category.slug}`} key={category.slug}>
