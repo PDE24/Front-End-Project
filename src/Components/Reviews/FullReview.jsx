@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Vote from "../Votes/Vote";
+import VoteButtons from "../Votes/VoteButtons";
 
 export default function FullReview() {
   const [review, setReview] = useState({});
@@ -14,22 +16,25 @@ export default function FullReview() {
       });
   }, [review_id]);
 
-  console.log(review);
+  
   return (
     <div className="full-review">
-      <h3 className="full-title">{review.title}</h3>
+      <h3>{review.title}</h3>
       <div className="full-img-container">
-        <img
-          src={review.review_img_url}
-          alt={review.title}
-          className="full-img"
-        />
+      <img src={review.review_img_url} alt={review.title} />
       </div>
-      <h4 className="owner">Owner: {review.owner}</h4>
-      <h4 className="designer">Designer: {review.designer}</h4>
-      <h4 className="info">Category: {review.category}</h4>
-      <div className="votes">Votes</div>
-      <p className="full-body">{review.review_body}</p>
+
+      <div className="info">
+        <h4>Owner: {review.owner}</h4>
+        <h4>Designer: {review.designer}</h4>
+        <h4>Category: {review.category}</h4>
+        <h4>Date: {review.created_at}</h4>
+        <div className="voting-container">
+          <Vote votes={review.votes} />
+          <VoteButtons id={review_id} review={review} setReview={setReview}/>
+        </div>
+      </div>
+      <p>{review.review_body}</p>
     </div>
   );
 }
