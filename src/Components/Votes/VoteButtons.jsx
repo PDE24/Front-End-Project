@@ -1,3 +1,5 @@
+import './VoteButton.css';
+
 import axios from "axios";
 import { useState } from "react";
 
@@ -19,16 +21,16 @@ export default function VoteButtons({ id, review, setReview }) {
       });
   }
 
-  if (err) return <p> Error</p>;
+  if (err) return <p>Error</p>;
 
   if (voted) {
-    return <p>You have voted!</p>;
+    
   }
 
   return (
     <>
       <button
-        className="button"
+        className="vote-button"
         onClick={() => {
           vote(increaseVote);
         }}
@@ -36,7 +38,7 @@ export default function VoteButtons({ id, review, setReview }) {
         👍
       </button>
       <button
-        className="button"
+        className="vote-button"
         onClick={() => {
           vote(downVote);
         }}
