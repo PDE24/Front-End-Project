@@ -15,7 +15,7 @@ export default function FilterBar() {
 
   return (
     <div className="filter-bar">
-      <DropList>
+      <DropList className="filter-title">
         Category ▾
         {categories.map((category) => {
           return (

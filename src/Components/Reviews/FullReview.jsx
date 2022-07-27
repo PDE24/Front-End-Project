@@ -1,5 +1,6 @@
 import "./Reviews.css";
 
+
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -28,7 +29,7 @@ export default function FullReview() {
         </div>
 
         <div className="info">
-        <h2>{review.title}</h2>
+        <h2 className="full-title">{review.title}</h2>
           <h4>Owner: {review.owner}</h4>
           <h4>Designer: {review.designer}</h4>
           <h4>Category: {review.category}</h4>

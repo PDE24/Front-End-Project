@@ -9,6 +9,8 @@
     text-align: center;
     line-height: 0.3em;
     align-self: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: x-small;
     
     display: flex;
     align-items: center;
@@ -16,7 +18,50 @@
 
   .vote-icon {
     width: 30px;
+    padding-right: 5px;;
   }
+
+.vote-arrow{
+  width: 15px;
+  
+}
+
+.arrow-button-red {
+  margin-right: 8px;
+  font-family: 'Press Start 2P', cursive;
+  width: 40px;
+  height: 25px;
+  border: none;
+  background-color: rgba(255, 0, 0, 0.741);
+  box-shadow: 4px 4px black;
+}
+.arrow-button-red:hover {
+  background-color: rgba(255, 0, 0, 0.63);
+}
+.arrow-button-red:active{
+  transform: translate(2px, 2px);
+  box-shadow: #111 2px 2px;
+}
+
+
+.arrow-button-green {
+  margin-right: 8px;
+  font-family: 'Press Start 2P', cursive;
+  width: 40px;
+  height: 25px;
+  border: none;
+  background-color: #1BA665;
+  box-shadow: 4px 4px black;
+}
+.arrow-button-green:hover {
+  
+  background-color: #1ba665d8;
+}
+.arrow-button-green:active{
+  transform: translate(2px, 2px);
+  box-shadow: #111 2px 2px;
+}
+
 .voting-container{
    text-align: center;
 }
