@@ -6,6 +6,7 @@ import axios from "axios";
 
 import Vote from "../Votes/Vote";
 import VoteButtons from "../Votes/VoteButtons";
+import CommentGallery from './Comments/CommentGallery';
 
 export default function FullReview() {
   const [review, setReview] = useState({});
@@ -21,6 +22,7 @@ export default function FullReview() {
 
   
   return (
+    <>
     <div className="full-review">
       <h3>{review.title}</h3>
       <div className="full-img-container">
@@ -39,5 +41,7 @@ export default function FullReview() {
       </div>
       <p>{review.review_body}</p>
     </div>
+    <CommentGallery id={review_id}/>
+    </>
   );
 }
