@@ -14,7 +14,7 @@ export default function DropList(props) {
       }}
     >
       <div>
-        <h3>{props.children[0]}</h3>
+        <h3 className="menu-title">{props.children[0]}</h3>
       </div>
       {isOpen && <div className="menu-options">{props.children[1]}</div>}
     </section>

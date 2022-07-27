@@ -46,6 +46,10 @@
   margin-bottom: 5px;
 }
 
+.menu h3 {
+  
+}
+
 .menu-options {
   display: flex;
   flex-wrap: wrap;
@@ -128,6 +132,7 @@
   border-radius: 8px;
   box-shadow: #111 5px 5px;
   font-weight: bold;
+
   font-size: medium;
   color: #111;
   padding-top: 10px;
@@ -148,6 +153,25 @@
   box-shadow: none;
 }
 
+
+.votes{
+  grid-column: 1;
+  width: fit-content;
+  height: 35px;
+  background-color: #F29422;
+  border: 2px solid #111;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: small;
+}
+
+.votes p {
+ margin: 10px;
+}
+
+
+
+
 .full-review {
   height: 600px;
   width: 900px;
@@ -157,18 +181,11 @@
 
   background-color: white;
   border-radius: 15px;
+
   border: 2px solid #111;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.full-title{
-  grid-area: title;
-}
-
-.full-img{
-  grid-area: image;
-  width: 300px;
-}
 
 
 
