@@ -1,3 +1,4 @@
+import './Reviews.css';
 
 import Vote from "../Votes/Vote";
 import { Link } from "react-router-dom";

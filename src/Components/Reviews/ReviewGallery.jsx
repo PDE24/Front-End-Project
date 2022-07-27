@@ -1,3 +1,5 @@
+import './Reviews.css';
+
 import FilterBar from "../FilterBar";
 import SampleReviewCard from "./SampleReviewCard";
 
