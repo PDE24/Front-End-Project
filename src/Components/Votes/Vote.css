@@ -1,0 +1,22 @@
+.votes{
+    grid-column: 1;
+    width: 90px;
+    height: 35px;
+    
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    line-height: 0.3em;
+    align-self: center;
+    
+    display: flex;
+    align-items: center;
+  }
+
+  .vote-icon {
+    width: 30px;
+  }
+.voting-container{
+   text-align: center;
+}

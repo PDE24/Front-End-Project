@@ -1,0 +1,85 @@
+.comment-gallery {
+width: 100%;
+grid-area: comment;
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+h2 {
+    width: 100%;
+}
+
+.add-comment{
+    width: 100%;
+}
+
+.comment-card {
+    max-width: 500px;
+    flex-grow: 1;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    margin: 20px ;
+    padding: 10px 20px;
+    text-align: left;
+
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1px;
+    align-items: center;
+    grid-template-areas: 
+        "author author"
+        "comment comment"
+        "date votes";
+}
+
+.author {
+    grid-area: author;
+}
+
+.comment-body{
+    grid-area: comment;
+
+    background-color: rgb(232, 232, 232);
+    border-radius: 1px;
+    padding: 0px 10px;
+}
+
+.date {
+    grid-area: date;
+}
+.comment-vote {
+    grid-area: votes;
+    justify-self: right;
+}
+
+.add-comment-form {
+    justify-self: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    max-width: 330px;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+    padding-left: 15px;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+.add-label {
+    width: 100%;
+    text-align: left;
+}
+
+#comment {
+    margin: 10px 0px;
+    background-color: rgb(232, 232, 232);
+    align-self: center;
+    flex-shrink: 1;
+    height: 100px;
+    width: 300px;
+}
+

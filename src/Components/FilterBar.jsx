@@ -19,9 +19,11 @@ export default function FilterBar() {
         Category ▾
         {categories.map((category) => {
           return (
+            
             <Link to={`/reviews/${category.slug}`} key={category.slug}>
               <div className="option">{category.slug.toUpperCase()}</div>
             </Link>
+        
           );
         })}
       </DropList> 

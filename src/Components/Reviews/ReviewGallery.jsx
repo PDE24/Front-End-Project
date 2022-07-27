@@ -1,4 +1,4 @@
-import './Reviews.css';
+import "./Reviews.css";
 
 import FilterBar from "../FilterBar";
 import SampleReviewCard from "./SampleReviewCard";
@@ -11,7 +11,6 @@ export default function ReviewGallery() {
   const [reviews, setReviews] = useState([]);
 
   const { category } = useParams();
-  console.log(category);
 
   useEffect(() => {
     axios
