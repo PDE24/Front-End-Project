@@ -15,8 +15,8 @@ export default function SampleReviewCard({ review }) {
             <h3 className="sample-title">{review.title}</h3>
             <p className="sample-body">{review.review_body}</p>
             <Vote votes={review.votes}/>
-            <Link className="button" to={`/review/${review.review_id}`}>
-                <p>Read more...</p>
+            <Link className='read-more' to={`/review/${review.review_id}`}>
+                <p>Read&nbsp;More</p>
             </Link>
        </div>
   );

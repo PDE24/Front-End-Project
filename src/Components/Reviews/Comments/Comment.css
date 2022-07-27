@@ -1,6 +1,7 @@
 .comment-gallery {
 width: 100%;
 grid-area: comment;
+border-top: 2px dashed black;
 
 display: flex;
 flex-wrap: wrap;
@@ -18,8 +19,8 @@ h2 {
 .comment-card {
     max-width: 500px;
     flex-grow: 1;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    border: 2px solid black;
+    box-shadow: 8px 8px black;
     margin: 20px ;
     padding: 10px 20px;
     text-align: left;
@@ -57,9 +58,9 @@ h2 {
 
 .add-comment-form {
     justify-self: center;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
-    max-width: 330px;
+    border: 2px solid black;
+    box-shadow: 8px 8px black;
+    max-width: 500px;
     height: auto;
     margin: 20px auto;
     padding: 10px;
@@ -77,6 +78,7 @@ h2 {
 #comment {
     margin: 10px 0px;
     background-color: rgb(232, 232, 232);
+    border: none;
     align-self: center;
     flex-shrink: 1;
     height: 100px;

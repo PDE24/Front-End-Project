@@ -1,4 +1,6 @@
 import './VoteButton.css';
+import uVote from '../../images/up-vote.png';
+import dVote from '../../images/down-vote.png';
 
 import axios from "axios";
 import { useState } from "react";
@@ -30,20 +32,20 @@ export default function VoteButtons({ id, review, setReview }) {
   return (
     <>
       <button
-        className="vote-button"
+        className="arrow-button-green"
         onClick={() => {
           vote(increaseVote);
         }}
       >
-        👍
+        +1
       </button>
       <button
-        className="vote-button"
+        className="arrow-button-red"
         onClick={() => {
           vote(downVote);
         }}
       >
-        👎
+        -1
       </button>
     </>
   );
