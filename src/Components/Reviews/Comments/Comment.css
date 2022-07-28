@@ -15,6 +15,9 @@ h2 {
 .add-comment{
     width: 100%;
 }
+.comment-added {
+    justify-self: center;
+}
 
 .comment-card {
     max-width: 500px;
