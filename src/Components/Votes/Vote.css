@@ -33,14 +33,14 @@
   height: 25px;
   border: none;
   background-color: rgba(255, 0, 0, 0.741);
-  box-shadow: 4px 4px black;
+  box-shadow: 4px 4px #262626;
 }
 .arrow-button-red:hover {
   background-color: rgba(255, 0, 0, 0.63);
 }
 .arrow-button-red:active{
   transform: translate(2px, 2px);
-  box-shadow: #111 2px 2px;
+  box-shadow: #262626 2px 2px;
 }
 
 
@@ -51,7 +51,7 @@
   height: 25px;
   border: none;
   background-color: #1BA665;
-  box-shadow: 4px 4px black;
+  box-shadow: 4px 4px #262626;
 }
 .arrow-button-green:hover {
   
@@ -59,7 +59,7 @@
 }
 .arrow-button-green:active{
   transform: translate(2px, 2px);
-  box-shadow: #111 2px 2px;
+  box-shadow: #262626 2px 2px;
 }
 
 .voting-container{

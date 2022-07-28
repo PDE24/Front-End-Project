@@ -5,10 +5,11 @@
   min-width: 300px;
   display: grid;
   justify-content: center;
-  grid-template-columns: 72% 25%;
+  grid-template-columns: 75% 20%;
   grid-template-rows: 100px auto;
-  gap: 10px;
-  background-color: #F2B705;
+  column-gap: 10px;
+  row-gap: 25px;
+  background-color: #D9D9D9;
 }
 
 /* Banner Section */
@@ -16,9 +17,6 @@
   border: solid 1px black;
 }
 
-.current-user {
-  border: solid 1px black;
-}
 
 
 
@@ -27,5 +25,6 @@
 
 
 
+/* #F2B705 */
 
 

@@ -1,0 +1,45 @@
+.user-gallery {
+    grid-column: span 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.user-card {
+    border: 1px solid black;
+    height: 250px;
+    width: 200px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 8px 8px #262626;
+    border: 2px solid #262626;
+}
+
+.current-user {
+    box-shadow: 8px 8px #262626;
+    border: 2px solid #262626;
+    background-color: white;
+    
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.current-avatar {
+ width: 6vw;
+ height: 6vw;
+ margin: 5px;
+}
+.curren-name {
+    font-size: 1vw;
+}
+
+.avatar {
+    width:100px;
+    height: 100px;
+}

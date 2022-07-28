@@ -1,12 +1,12 @@
 .vote-button {
     grid-column: 3;
     background-color: #6B98F2;
-    border: 2px solid #111;
+    border: 2px solid #262626;
     width: 80px;
     height: 40px;
     padding: 0px 5px;
     border-radius: 8px;
-    box-shadow: #111 3px 3px;
+    box-shadow: #262626 3px 3px;
     font-weight: bold;
     font-size: x-large;
     color: #111;
@@ -20,7 +20,7 @@
   .vote-button:hover {
     transition: transform .2s ease-out;
     transform: translate(2px, 2px);
-    box-shadow: #111 2px 2px;
+    box-shadow: #262626 2px 2px;
   }
   
   .vote-button:active {

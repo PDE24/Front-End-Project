@@ -1,6 +1,5 @@
 import './VoteButton.css';
-import uVote from '../../images/up-vote.png';
-import dVote from '../../images/down-vote.png';
+
 
 import axios from "axios";
 import { useState } from "react";

@@ -68,8 +68,8 @@
     grid-template-rows: 200px 2fr 2fr 1fr;
     
     background-color: white;
-    box-shadow: 8px 8px black;
-    border: 2px solid black;
+    box-shadow: 8px 8px #262626;
+    border: 2px solid #262626;
   } 
   
   .sample-img-container {
@@ -126,7 +126,7 @@
     height: 25px;
     border: none;
     background-color: #6B98F2;
-    box-shadow: 4px 4px black;
+    box-shadow: 4px 4px #262626;
   }
   .button:hover {
     
@@ -134,7 +134,7 @@
   }
   .button:active{
     transform: translate(2px, 2px);
-    box-shadow: #111 2px 2px;
+    box-shadow: #262626 2px 2px;
   }
   
   
@@ -151,8 +151,8 @@
     margin-bottom: 50px;
   
     background-color: white;
-    box-shadow: 8px 8px black;
-    border: 2px solid black;
+    box-shadow: 8px 8px #262626;
+    border: 2px solid #262626;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows:  auto auto auto auto;

@@ -35,7 +35,7 @@ export default function CommentGallery({ id }) {
         {newComment ? (
           <CommentForm />
         ) : (
-          <></>
+          null
         )}
       </div>
     </div>
