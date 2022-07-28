@@ -10,6 +10,7 @@ export default function CommentForm({ setComments, comments }) {
   const [commentBody, setCommentBody] = useState("");
 
   const newComment = {
+    comment_id: Math.random(),
     author: user.username,
     body: commentBody,
     created_at: String(new Date()),
@@ -28,6 +29,7 @@ export default function CommentForm({ setComments, comments }) {
       commentToPost
     );
     setComments([...comments, newComment]);
+    setCommentBody("");
   }
 
   return (

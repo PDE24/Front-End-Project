@@ -169,17 +169,17 @@
   }
   
   .full-img-container {
-    text-align: center;
-    align-self: center;
+    
     overflow: hidden;
     max-width: 550px;
-    max-height: 320px;
+    height: 320px;
     
   }
   
   .full-img {
-    height: 100%;
-    width: 100%;
+    justify-self: center;
+    height: 400px;
+    width: 550px;
     object-fit: cover;
   }
   

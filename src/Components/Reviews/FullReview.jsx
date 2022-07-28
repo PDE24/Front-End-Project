@@ -1,4 +1,5 @@
 import "./Reviews.css";
+import Loading from "../../images/loading.gif";
 
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -10,15 +11,26 @@ import CommentGallery from "./Comments/CommentGallery";
 
 export default function FullReview() {
   const [review, setReview] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
   const { review_id } = useParams();
 
   useEffect(() => {
+    setIsLoading(true);
     axios
       .get(`https://pde-games.herokuapp.com/api/reviews/${review_id}`)
       .then((res) => {
         setReview(res.data.review);
+        setIsLoading(false);
       });
   }, [review_id]);
+
+  if (isLoading) {
+    return (
+      <div className="loading">
+        <img src={Loading} alt={"loading page"} className="bar" />
+      </div>
+    );
+  }
 
   return (
       <div className="full-review">
