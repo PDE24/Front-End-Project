@@ -70,7 +70,6 @@ h2 {
     padding-left: 15px;
     display:flex;
     flex-wrap: wrap;
-    
 }
 
 .add-label {
@@ -85,6 +84,7 @@ h2 {
     align-self: center;
     flex-shrink: 1;
     height: 100px;
-    width: 300px;
+    width: 450px;
+    resize: none;
 }
 

@@ -1,6 +1,5 @@
 import "./Reviews.css";
 
-
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -22,7 +21,6 @@ export default function FullReview() {
   }, [review_id]);
 
   return (
-    <>
       <div className="full-review">
         <div className="full-img-container">
           <img className="full-img" src={review.review_img_url} alt={review.title} />
@@ -42,6 +40,5 @@ export default function FullReview() {
         <p className="body">{review.review_body}</p>
       <CommentGallery id={review_id} />
       </div>
-    </>
   );
 }
