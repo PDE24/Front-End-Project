@@ -9,6 +9,7 @@ export default function CommentGallery({ id }) {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState(false);
 
+
   useEffect(() => {
     axios
       .get(`https://pde-games.herokuapp.com/api/reviews/${id}/comments`)
@@ -33,7 +34,7 @@ export default function CommentGallery({ id }) {
           Add Comment
         </button>
         {newComment ? (
-          <CommentForm />
+          <CommentForm setComments={setComments} comments={comments}/>
         ) : (
           null
         )}
